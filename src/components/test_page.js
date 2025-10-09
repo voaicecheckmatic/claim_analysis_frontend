@@ -73,7 +73,7 @@ export default function TariffDashboard() {
     formData.append("output_excel", "output.xlsx");
 
     try {
-      const response = await fetch("https://0.0.0.0:8002/tariff_upload", {
+      const response = await fetch("http://35.176.85.181:8002/tariff_upload", {
         method: "POST",
         body: formData,
       });
@@ -185,4 +185,5 @@ export default function TariffDashboard() {
   );
 
 }
+
 
